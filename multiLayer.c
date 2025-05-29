@@ -1,4 +1,4 @@
-// Multi-Layer Dijkstra com estimativa r[v] (heurística reversa) baseada no artigo
+// Multi-Layer Dijkstra
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -193,12 +193,6 @@ void dijkstra(No origem, No destino, int banda_minima)
     }
 }
 
-// Análise de complexidade
-void analisar_complexidade()
-{
-    printf("Complexidade estimada: O((V + E) * log V)\n");
-}
-
 // Função principal
 int main()
 {
@@ -239,6 +233,5 @@ int main()
 
     dijkstra(A1, F3, 5);
 
-    analisar_complexidade();
     return 0;
 }
